@@ -1,0 +1,173 @@
+/*--Global Animations--*/
+/*-Icon Animation-*/
+@keyframes slide {
+    0% {
+      transform: translateX(0px) rotate(0deg);
+    }
+    30% {
+      transform: rotate(10deg);
+    }
+    40% {
+      transform: rotate(-10deg);
+    }
+    50% {
+      transform: translateX(-20px) rotate(0deg);
+    }
+    60% {
+      transform: rotate(-10deg);
+    }
+    70% {
+      transform: rotate(10deg);
+    }
+    100% {
+      transform: translateX(0px) rotate(0deg);
+    }
+}
+
+/*-Text Gradient Animation-*/
+@keyframes swipe-animation {
+    0% {
+      background-position: left;
+      transform: rotate(20);
+    }
+    50% {
+      background-position: right;
+    }
+    100% {
+      background-position: left;
+    }
+}
+
+/*-Bounce Animation(Currently Unused)-*/
+@keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-50px);
+    }
+}
+
+/*-Link Cards Animation-*/
+@keyframes cardGlow {
+    0% {
+      box-shadow: 0 0 10px rgba(181, 23, 158, 0.7);
+    }
+    50% {
+      box-shadow: 0 0 20px rgba(58, 12, 163, 0.7), 0 0 40px rgba(67, 97, 238), 0 0 80px rgba(76, 201, 240, 0.7);
+    }
+    100% {
+      box-shadow: 0 0 10px rgba(181, 23, 158, 0.7);
+    }
+}
+
+/*-Hover Text Border Animation-*/
+@keyframes borderAnimation {
+    0% {
+      border-color: transparent;
+    }
+    50% {
+      border-color: rgb(58, 12, 163);
+    }
+    100% {
+      border-color: transparent;
+    }
+}
+
+/*-Hover Text Glow Animation-*/
+@keyframes neonGlow {
+    0% {
+      box-shadow: 0 0 5px rgba(58, 12, 163, 0.7);
+    }
+    50% {
+      box-shadow: 0 0 px rgba(58, 12, 163, 0.7), 0 0 30px rgba(58, 12, 163, 0.7), 0 0 40px rgba(58, 12, 163, 0.7);
+    }
+    100% {
+      box-shadow: 0 0 5px rgba(58, 12, 163, 0.7);
+    }
+}
+
+/*-Intro Fullscreen Animation-*/
+@keyframes load {
+    0% {
+      opacity: 1;
+      z-index: 500;
+    }
+    90% {
+      opacity: 1;
+      z-index: 500;
+    }
+    100% {
+      opacity: 0;
+      z-index: -100;
+    }
+}
+
+/*-Cat-Face Animation-*/
+@keyframes catFadeIn {
+    0% {
+      opacity: 0;
+      z-index: 700;
+    }
+    20% {
+        opacity: 1;
+        z-index: 700;
+    }
+    90% {
+        opacity: 1;
+        z-index: 700;
+    }
+    100% {
+        opacity: 0;
+        z-index: -101;
+    }
+}
+
+/*-Cat-Meow Animation-*/
+@keyframes meow {
+    0% {
+      opacity: 1;
+      z-index: 501;
+    }
+    90% {
+      opacity: 1;
+      z-index: 501;
+    }
+    100% {
+      opacity: 0;
+      z-index: -100;
+    }
+}
+
+/*-Cat-Blink Animation-*/
+@keyframes blink {
+    0% { height: 0; }
+    90% { height: 0; }
+    92.5% { height: 100%; }
+    95% { height: 0; }
+    97.5% { height: 100%; }
+    100% { height: 0; }
+}
+
+/*-Cat-LookAround Animation-*/
+@keyframes look-around {
+    0% { transform: translate(0); }
+    5% { transform: translate(50%, -25%); }
+    10% { transform: translate(50%, -25%); }
+    15% { transform: translate(-100%, -25%); }
+    20% { transform: translate(-100%, -25%); }
+    25% { transform: translate(0, 0); }
+    100% { transform: translate(0, 0); }
+}
+
+@keyframes moveMeow {
+    0% {
+      transform: translate(0, 0) rotate(0);
+    }
+    50% {
+      transform: translate(100px, 100px) rotate(180deg);
+    }
+    100% {
+      transform: translate(0, 0) rotate(360deg);
+    }
+}

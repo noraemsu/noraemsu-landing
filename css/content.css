@@ -1,0 +1,99 @@
+/* Message box with more information on hover */
+.hoverText {
+    position: absolute;
+    top: -100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(247, 37, 133, 1);
+    color: white;
+    border-radius: 10px;
+    padding: 5px 10px;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    text-shadow: 2px 2px #480CA8;
+    border: 2px solid transparent;
+    font-size: 0.6em;
+    animation: borderAnimation 5s linear infinite, neonGlow 5s linear infinite;
+}
+
+.groupText:hover + .hoverText {
+    opacity: 1;
+}
+
+/* Custom webfont icons */
+.custom-icon {
+    width: 5rem;
+    height: 5rem;
+}
+
+/* Icon Link? Don't think this is used anymore */
+.iconLink {
+    font-size: 5rem;
+    color:#560BAD;
+}
+a.iconLink:hover {
+    color:#F72585;
+}
+
+/* Link Text */
+a.textLink {
+    position: relative;
+    display: inline-block;
+}
+a.textLink:hover {
+    background: linear-gradient(to right, #F72585, #480CA8, #4CC9F0);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-size: 200% auto;
+    animation: swipe-animation 5s linear infinite;
+}
+
+/* Affects both the Link Text and the Icon */
+.groupLink {
+    color: #560BAD;
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+}
+a.groupLink:hover {
+    text-decoration: none;
+}
+a.groupLink:hover .groupText {
+    background-image: linear-gradient(to right, #F72585, #480CA8, #4CC9F0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-decoration: none;
+    text-fill-color: transparent;
+    background-size: 200% auto;
+    animation: swipe-animation 5s linear infinite;
+}
+a.groupLink:hover i{
+    animation: slide 5s ease-in-out infinite;
+    color:#3F37C9
+}
+
+/* Only used if startPageColumns = false in hugo.toml*/
+.textLink {
+    color: #4895EF;
+}
+
+/* Cards for Links */
+.card {
+    opacity: 0.8;
+    border-radius: 50px !important;
+    padding: 5px 10px;
+    white-space: nowrap;
+  }
+  .card:hover {
+    opacity: 1;
+    animation: cardGlow 5s linear infinite;
+  }
+
+/* Group Titles */
+.groupTitle{
+    color: #222;
+    font-weight: bold;
+}

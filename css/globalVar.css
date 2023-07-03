@@ -1,0 +1,78 @@
+:root {
+    --siteBG: url("../images/bg.jpg");
+    --screenHeight: 100vh;
+    --globalFontFamily: 'Kalam', cursive, 'Segoe UI Emoji', 'Noto Color Emoji', 'Apple Color Emoji', 'Android Emoji', 'EmojiOne', 'Emoji', 'Arial', sans-serif;
+    --globalFontTrans: uppercase;
+    --intoTimer: 10s;
+    --introCatPosYMobile: 30%;
+    --introCatPosYTablet: 40%;
+    --introCatPosYDesktop: 50%;
+    --introCatScaleMobile: 250px;
+    --introCatScaleTablet: 300px;
+    --introCatScaleDesktop: 350px;
+    --introCatSpeakMobile: 5vw;
+    --introCatSpeakTablet: 4vw;
+    --introCatSpeakDesktop: 3vw;
+    --customCursorDefault: url("/images/cute-pop-cat-cursor.png"), default;
+    --customCursorPointer: url("/images/cute-pop-cat-pointer.png"), pointer;
+    --welcomeTextMobile: 10vw;
+    --welcomeTextTablet: 10vw;
+    --welcomeTextDesktop: 6vw;
+    --linkTextMobile: 5vw;
+    --linkTextTablet: 2.25vw;
+    --linkTextDesktop: 2vw;
+}
+
+/* Small devices (up to 576px) */
+@media (max-width: 576px) {
+    .welcomeText {
+      font-size: var(--welcomeTextMobile);
+    }
+    .groupLink {
+        font-size: var(--linkTextMobile);
+    }
+    .cat {
+        top: var(--introCatPosYMobile);
+        height: var(--introCatScaleMobile);
+        width: calc(var(--introCatScaleMobile) * 1.13);
+    }
+    .words {
+        font-size: var(--introCatSpeakMobile);
+    }
+  }
+  
+  /* Medium devices (576px to 768px) */
+  @media (min-width: 577px) and (max-width: 768px) {
+    .welcomeText {
+      font-size: var(--welcomeTextTablet);
+    }
+    .groupLink {
+        font-size: var(--linkTextTablet);
+    }
+    .cat {
+        top: var(--introCatPosYTablet);
+        height: var(--introCatScaleTablet);
+        width: calc(var(--introCatScaleTablet) * 1.13);
+    }
+    .words {
+        font-size: var(--introCatSpeakTablet);
+    }
+  }
+  
+  /* Large devices (768px and above) */
+  @media (min-width: 769px) {
+    .welcomeText {
+      font-size: var(--welcomeTextDesktop);
+    }
+    .groupLink {
+        font-size: var(--linkTextDesktop);
+    }
+    .cat {
+        top: var(--introCatPosYDesktop);
+        height: var(--introCatScaleDesktop);
+        width: calc(var(--introCatScaleDesktop) * 1.13);
+    }
+    .words {
+        font-size: var(--introCatSpeakDesktop);
+    }
+  }
