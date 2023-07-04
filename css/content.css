@@ -1,6 +1,7 @@
 /* Message box with more information on hover */
 .hoverText {
     position: absolute;
+    z-index: -10;
     top: -100%;
     left: 50%;
     transform: translateX(-50%);
@@ -19,6 +20,7 @@
 
 .groupText:hover + .hoverText {
     opacity: 1;
+    z-index: 10;
 }
 
 /* Custom webfont icons */

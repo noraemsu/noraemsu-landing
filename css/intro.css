@@ -4,7 +4,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #370e4b;
+  background-color: rgba(55, 14, 75, 1);
   z-index: 500;
   opacity: 1;
   animation: load var(--intoTimer) forwards;
